@@ -408,21 +408,21 @@ a.label:focus, a.label:hover {
 
 .btn-primary {
   color: #fff;
-  background-color: #00A699;
-  border: 1px solid #00A699;
+  background-color: #A69900;
+  border: 1px solid #A69900;
 }
 
 .btn.btn-default.btn-subscribe,
 .btn.btn-default.btn-subscribe:hover {
   background-color: #fff;
-  border: 1px solid #00A699;
+  border: 1px solid #A69900;
   color: #00A699;
 }
 
 .btn-unsubscribe,
 .btn-unsubscribe:hover {
-  background-color: #00A699;
-  border: 1px solid #00A699;
+  background-color: #A69900;
+  border: 1px solid #A69900;
   color: #fff;
 }
 
