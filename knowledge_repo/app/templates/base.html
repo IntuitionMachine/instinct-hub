@@ -68,29 +68,34 @@
 
         <div class="navbar navbar-knowledge" role="navigation">
             <div class="container page-container">
-                <a  href="/" aria-selected="false" class="logo-image navbar-text" style='margin-top:16px; margin-left: -7px'>
-                    <img width="125" src='{{ url_for("static", filename = "images/logo-white.svg")}}'></img>
+                <a  href="/" aria-selected="false" class="logo-image navbar-text" style='margin-top:8px; margin-left: -7px'>
+                    <img width="35" src='{{ url_for("static", filename = "images/logo-white.svg")}}'></img>
                 </a>
+                
+                <a id="help_tab" href="/about" aria-selected="false" class="navbar-text" style='margin-top:18px'>
+                  About
+                </a>
+                
                 <a id="feed_tab" href="/" aria-selected="false" class="navbar-text" style='margin-top:18px'>
-                    Home
+                    View
                 </a>
                 <a id="favorites_tab" href="/favorites" aria-selected="false" class="navbar-text" style='margin-top:18px'>
                     Favorites
                 </a>
-                <a id="help_tab" href="/about" aria-selected="false" class="navbar-text" style='margin-top:18px'>
-                    About
-                </a>
+                
                 <a id="stats_tab" href="/stats" aria-selected="false" class="navbar-text" style='margin-top:18px'>
                     Stats
                 </a>
+                <!--
                 <a id="webposts_tab" href="/create"
                    class="btn btn-primary navbar-text pull-right"
-                   style='border-radius:4px; margin-top:10px; margin-right:-10px; background-color: #00a699; color:white; border-color: #00a699'>
+                   style='border-radius:4px; margin-top:10px; margin-right:-10px; background-color: #FF0000; color:white; border-color: #00a699'>
                     Write a Post!
                 </a>
+                -->
                 <div class="pull-right">
                     <div class="form-group">
-                        <input class="form-control" id="searchbar" placeholder="Search for Knowledge" style="text-align:right">
+                        <input class="form-control" id="searchbar" placeholder="Search" style="text-align:right">
                     </div>
                 </div>
             </div>
@@ -103,7 +108,7 @@
         </div>
 
         <div class="footer">
-            Served with <span class="glyphicon glyphicon-heart"></span> by <a href="https://github.com/airbnb/knowledge-repo">Knowledge Repo</a> <a {% if version_revision %}title='{{version_revision}}'{% endif %} href="https://github.com/airbnb/knowledge-repo/releases/tag/v{{ version }}">{{ version }}</a><br />
+             <a href="https://github.com/airbnb/knowledge-repo">Instinct Hub</a> <a {% if version_revision %}title='{{version_revision}}'{% endif %} href="https://github.com/airbnb/knowledge-repo/releases/tag/v{{ version }}">{{ version }}</a> developed by Intuition Machine<br />
             <i title="Last checked for updates: {{last_index_check}}">Last indexed: {{last_index}}</i>
         </div>
 
