@@ -1,4 +1,4 @@
-# The Knowledge Repository (BETA)
+# Instinct Hub based on AirBNB Knowledge Repository (BETA)
 [![Build Status](https://travis-ci.org/airbnb/knowledge-repo.svg?branch=master)](https://travis-ci.org/airbnb/knowledge-repo)
 [![Windows Build Status](https://ci.appveyor.com/api/projects/status/t88a27n099oqnbsw/branch/master?svg=true&pendingText=Windows%20build%20pending...&passingText=Windows%20build%20passing&failingText=Windows%20build%20failing)](https://ci.appveyor.com/project/matthewwardrop/knowledge-repo)
 [![PyPI version](https://badge.fury.io/py/knowledge-repo.svg)](https://badge.fury.io/py/knowledge-repo)
