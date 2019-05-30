@@ -12,7 +12,8 @@
 {% endmacro %}
 
 {% macro format_notebook(nb) %}
-  {% set url = 'http://jupyter.intuitonfabric.com/tree/work/' + nb.split('.')[0] + '.ipynb' %}
+  {% set BASE_URL = 'http://jupyter.intuitonfabric.com:8888/tree/work/' %}
+  {% set url = BASE_URL + nb.split('.')[0] + '.ipynb' %}
     <a href='{{ url }}'>
       [ Show in Notebook ]
     </a>
