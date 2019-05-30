@@ -45,6 +45,8 @@
         <div class='feed-metadata'>
                 <span class="feed-title">{{ post.title }}</span>
                 <span class="feed-authors"> {{ format_authors(post.authors)|safe }}</span>
+                <span class='feed-authors'>{{ format_notebook(post.path) }}</span>
+                
                 <span class="feed-tags">
                     {% for tag_obj in post.tags %}
                         {{ render_tag(tag_obj.name, loop.index0) }}

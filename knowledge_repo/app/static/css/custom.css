@@ -103,7 +103,7 @@ body {
 }
 
 a {
-  color: #FF0000;
+  color: #FF4136;
   text-decoration: none;
 }
 
@@ -161,8 +161,8 @@ img {
 }
 
 a.label:focus, a.label:hover {
-    color: #FF0000;
-    border-color: #FF0000;
+    color: #FF4136;
+    border-color: #FF4136;
     background-color: #fff;
     opacity: 1;
 }
@@ -178,8 +178,8 @@ a.label:focus, a.label:hover {
 }
 
 .label-tag[href]:hover {
-  color: #FF0000;
-  border-color: #FF0000;
+  color: #FF4136;
+  border-color: #FF4136;
   background-color: #fff;
   opacity: 1;
 }
@@ -197,21 +197,21 @@ a.label:focus, a.label:hover {
 
 .btn-primary {
   color: #fff;
-  background-color: #FF0000;
-  border: 1px solid #FF0000;
+  background-color: #FF4136;
+  border: 1px solid #FF4136;
 }
 
 .btn.btn-default.btn-subscribe,
 .btn.btn-default.btn-subscribe:hover {
   background-color: #fff;
-  border: 1px solid #FF0000;
-  color: #FF0000;
+  border: 1px solid #FF4136;
+  color: #FF4136;
 }
 
 .btn-unsubscribe,
 .btn-unsubscribe:hover {
-  background-color: #FF0000;
-  border: 1px solid #FF0000;
+  background-color: #FF4136;
+  border: 1px solid #FF4136;
   color: #fff;
 }
 
@@ -490,11 +490,11 @@ span.index-view-name {
 
 .btn-active, .btn-active > span {
   color: white;
-  background-color: #FF0000;
+  background-color: #FF4136;
 }
 
 .btn-active:hover {
-  background-color: #FF0000;
+  background-color: #FF4136;
   opacity: 0.8;
 }
 
@@ -522,15 +522,15 @@ margin: 0px;
   display: block;
 }
 .pagination li a {
-  color: #FF0000;
+  color: #FF4136;
 }
 .pagination .active a {
-background-color: #FF0000;
-border-color: #FF0000;
+background-color: #FF4136;
+border-color: #FF4136;
 }
 .pagination .active a:hover {
-background-color: #FF0000;
-border-color: #FF0000;
+background-color: #FF4136;
+border-color: #FF4136;
 }
 
 .page-btn {
@@ -646,14 +646,14 @@ border-color: #FF0000;
 #btn_publish:hover,
 #btn_publish.btn-primary,
 .btn-email-reviewers{
-  background-color: #FF0000;
-  border: 1px solid #FF0000;
+  background-color: #FF4136;
+  border: 1px solid #FF4136;
   color: #fff;
 }
 
 .create-btn-group > a {
-  background-color: #FF0000;
-  border: 1px solid #FF0000;
+  background-color: #FF4136;
+  border: 1px solid #FF4136;
 }
 
 .btn[data-target*='#show_posts_']:active,

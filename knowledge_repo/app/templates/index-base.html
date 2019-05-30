@@ -11,6 +11,13 @@
   {% endfor %}
 {% endmacro %}
 
+{% macro format_notebook(nb) %}
+  {% set url = 'http://jupyter.intuitonfabric.com/tree/work/' + nb.split('.')[0] + '.ipynb' %}
+    <a href='{{ url }}'>
+      [ Show in Notebook ]
+    </a>
+{% endmacro %}
+
 {% macro pagination(max_pages=10, extremes=True, autohide=True) %}
   {% if feed_params %}
     {% set start = feed_params['start'] | default(0) %}
