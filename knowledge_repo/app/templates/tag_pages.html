@@ -88,6 +88,7 @@
           <p class="feed-tldr">
             <i>{{ post['tldr']|safe }}</i>
             <br>
+            <span class='feed-authors'>{{ format_notebook(post.path) }}</span>                
             <br>
             <a href="{{'/post/' + post.path|urlencode }}">Read post</a>
           </p>
