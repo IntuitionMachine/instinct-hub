@@ -2,12 +2,6 @@
 
 {% block title %} {% endblock %}
 
-{% block banner %}
-<div id="banner-about">
-    <h1 style="color: white">About AMD AI</h1>
-</div> 
-{% endblock %}
-
 {% block content %}
 
     {{ super() }}
@@ -78,7 +72,7 @@
 
     <hr/>
 {% endblock %}
-{% endblock %}
+
 {% block scripts %}
 {{ super() }}
 <script src="{{ url_for('static', filename='js/helpers.js') }}"></script>
