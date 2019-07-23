@@ -3,49 +3,75 @@
 {% block header %}
 
 <text style="font-size:32px">Knowledge Clusters {% endblock %}</text>
+{% block banner %}
+<div  id="banner-feed">
+    <div class="container">
+        <div class="col-lg-6">
+                <h1 style="color: white">All of AI in one place</h1>
+                <p style="color: white">Instinct Hub is a platform to discover and deploy machine learning products, from experimentation to production</p>
+                <button type="button" class="btn btn-raised btn-primary" onclick="location.href = '/view';">View Code</button>
+                <button type="button" class="btn btn-primary" onclick="location.href = "http://www.knowledge-repo.readthedocs.io";">View Documentation</button>
+        </div>
+            
+    </div>
+  
+  
+  </div> 
+  {% endblock %}
+
+  {% block inner_cluster %}
+  <div class="row cluster-header">
+      <div class="col-md-12">
+        <div class=" group-by-header">
+          <h2> Group posts by:</h2>
+        </div>
+        <span class="col-md-3 group-by-options">
+          <div class="radio-inline radio-cluster">
+            <label>
+              <input type="radio" name="cluster-radio" id="clusterFolder">Folder
+            </label>
+          </div>
+          <div class="radio-inline radio-cluster">
+            <label>
+              <input type="radio" name="cluster-radio" id="clusterTags">Tags
+            </label>
+          </div>
+          <div class="radio-inline radio-cluster">
+            <label>
+              <input type="radio" name="cluster-radio" id="clusterAuthor">Author
+            </label>
+          </div>
+        </span>
+  
+        <div class="sort-by-header">
+          <h2> Sort by:</h2>
+        </div>
+        <span class="col-md-3 sort-by-options">
+          <div class="radio-inline radio-cluster">
+            <label>
+              <input type="radio" name="sort-radio" id="sortAlpha"> Alphabetically
+            </label>
+          </div>
+          <div class="radio-inline radio-cluster">
+            <label>
+              <input type="radio" name="sort-radio" id="sortCount">Count
+            </label>
+          </div>
+        </span>
+      <div style="clear:both"></div>
+      </div>
+  
+  
+    </div>
+
+  {% endblock %}
 
 {% block inner_content %}
-  <br><br>
-  <div class="row cluster-header">
-    <div class="col-md-12" style='background-color:white'>
-      <div class="col-md-2 group-by-header">
-        <h5> Group posts by:</h5>
-      </div>
-      <span class="col-md-3 group-by-options">
-        <div class="radio-inline radio-cluster">
-          <label>
-            <input type="radio" name="cluster-radio" id="clusterFolder">Folder
-          </label>
-        </div>
-        <div class="radio-inline radio-cluster">
-          <label>
-            <input type="radio" name="cluster-radio" id="clusterTags">Tags
-          </label>
-        </div>
-        <div class="radio-inline radio-cluster">
-          <label>
-            <input type="radio" name="cluster-radio" id="clusterAuthor">Author
-          </label>
-        </div>
-      </span>
-      <div class="col-md-2 sort-by-header">
-        <h5> Sort by:</h5>
-      </div>
-      <span class="col-md-3 sort-by-options">
-        <div class="radio-inline radio-cluster">
-          <label>
-            <input type="radio" name="sort-radio" id="sortAlpha"> Alphabetically
-          </label>
-        </div>
-        <div class="radio-inline radio-cluster">
-          <label>
-            <input type="radio" name="sort-radio" id="sortCount">Count
-          </label>
-        </div>
-      </span>
-    <div style="clear:both"></div>
-    </div>
-  </div>
+  <div class="container-fluid">
+
+  
+  
+
   <ul id="cluster_list">
   {% for cluster, contents in grouped_data %}
     {%- if contents|length > 0 and cluster|length > 0 %}
@@ -71,7 +97,7 @@
     {%- endif%}
   {% endfor %}
   </ul>
-
+</div>
 {% endblock %}
 
 {% block scripts %}

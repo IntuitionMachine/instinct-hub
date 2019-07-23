@@ -1,0 +1,37 @@
+p,ul,li,input,button{
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+@font-face{
+    font-family:AMD;
+    src: url(/static/images/KlavikaBoldBold.woff);
+}
+
+@font-face{
+    font-family: CODE;
+    src: url(/static/images/Menlo-Regular.woff);
+}
+
+h1,h2 {
+    font-family: 'AMD' !important;
+}
+
+a{
+    font-weight: bold!important;
+    text-decoration: none!important;
+    color: #007C97!important;
+}
+
+.code-block{
+    font-family: 'CODE'!important;
+    color: #27282B!important;
+}
+
+.green{
+    color: #009769 !important;
+}
+
+.blue{
+    color:#007C97!important;
+}
