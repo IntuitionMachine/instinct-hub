@@ -12,9 +12,9 @@
 {% endmacro %}
 
 {% macro format_notebook(nb) %}
-  {% set BASE_URL = 'http://159.65.38.105:8888/tree/work/' %}
+  {% set BASE_URL = 'http://localhost:8888/tree/work/' %}
   {% set url = BASE_URL + nb.split('.')[0] + '.ipynb' %}
-    <a href='{{ url }}'>
+    <a href="{{ url }}"  target="_blank">
       [ Run in Notebook ]
     </a>
 {% endmacro %}
